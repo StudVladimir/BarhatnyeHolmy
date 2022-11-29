@@ -1,0 +1,24 @@
+﻿<Window x:Class="BarhatnyeHolmy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BarhatnyeHolmy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Image Source="/Resources/logo.png" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75"></Image>
+        <TextBlock Text="Бархатные Холмы" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" Height="40" Width="248" Grid.Column="1"></TextBlock>
+        <Grid Grid.Row ="0" Background="#76E383" Panel.ZIndex="-2"></Grid>
+        <Grid Grid.Row="2" Background="#498C51"></Grid>
+        <Button Name="BtnBack" Width="175" Height="30" Content="Back" FontSize="15" Background="#498C51" Margin="0,0,44,0" VerticalAlignment="Center" HorizontalAlignment="Right" Click="BtnBack_Click"/>
+        <Frame NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" Grid.Row="1" Name="MainFrame"></Frame>
+
+
+    </Grid>
+</Window>
